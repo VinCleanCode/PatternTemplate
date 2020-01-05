@@ -1,6 +1,5 @@
 # PatternTemplate
-## Template pattern from Design Pattern
-
+### Template pattern from Design Pattern
 ### Reference:
 ### 1.1 Template Method Design Pattern
 https://javapapers.com/design-patterns/template-method-design-pattern/
