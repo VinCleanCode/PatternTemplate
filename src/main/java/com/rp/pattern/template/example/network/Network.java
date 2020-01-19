@@ -6,4 +6,18 @@ public abstract class Network {
 
     Network() {}
 
+    public boolean post(String message) {
+        if(logIn(this.username, this.password)){
+            boolean result = sendData(message.getBytes());
+            logOut();
+            return result;
+        }
+        return false;
+    }
+
+    protected abstract void logOut();
+
+    protected abstract boolean sendData(byte[] bytes);
+
+    protected abstract boolean logIn(String username, String password);
 }
